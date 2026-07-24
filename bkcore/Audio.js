@@ -18,6 +18,16 @@ bkcore.Audio.init = function(){
 
 bkcore.Audio.init();
 
+bkcore.Audio.resume = function() {
+  var ctx = bkcore.Audio._ctx;
+
+  if (ctx && ctx.state === 'suspended' && ctx.resume) {
+    return ctx.resume();
+  }
+
+  return null;
+};
+
 bkcore.Audio.addSound = function(src, id, loop, callback, usePanner){
 	var ctx = bkcore.Audio._ctx;
 	var audio = new Audio();
