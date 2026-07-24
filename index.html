@@ -1,20 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>HexGL by BKcore</title>
+    <title>HexGL 2026</title>
     <meta charset="utf-8">
-    <meta name="description" content="HexGL is a futuristic racing game built by Thibaut Despoulain (BKcore) using HTML5, Javascript and WebGL. Come challenge your friends on this fast-paced 3D game!">
-    <meta property="og:title" content="HexGL, the HTML5 futuristic racing game." />
-    <meta property="og:type" content="game" />
-    <meta property="og:url" content="http://hexgl.bkcore.com/" />
-    <meta property="og:image" content="http://hexgl.bkcore.com/image.png" />
-    <meta property="og:site_name" content="HexGL by BKcore" />
-    <meta property="fb:admins" content="1482017639" />
-    <link rel="icon" href="http://hexgl.bkcore.com/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="http://hexgl.bkcore.com/favicon.png" type="image/png">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="css/multi.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <link rel="stylesheet" href="css/multi.css?v=2" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="css/mobile-controls.css?v=2" type="text/css" charset="utf-8">
     <style>
       body {
         padding:0;
@@ -29,17 +21,6 @@
         width: 100%;
       }
     </style>
-    <script type="text/javascript">
-    //analytics
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-26274524-4']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
   </head>
 
   <body>
@@ -84,6 +65,19 @@
     </div>
 
     <div id="leapinfo" style="display: none"></div>
+  
+<div id="mobile-gesture-layer" aria-hidden="true">
+  <div id="gesture-hint">
+    Houd vast voor gas · sleep links/rechts om te sturen · veeg omlaag om te remmen
+  </div>
+</div>
+
+  <div class="mc-right-zone">
+    <button id="mc-brake-left" class="mc-button mc-small" type="button" aria-label="Drift links">L</button>
+    <button id="mc-forward" class="mc-button mc-forward" type="button" aria-label="Gas">▲</button>
+    <button id="mc-brake-right" class="mc-button mc-small" type="button" aria-label="Drift rechts">R</button>
+  </div>
+</div>
 
     <script src="libs/leap-0.4.1.min.js"></script>
     <script src="libs/Three.dev.js"></script>
@@ -122,6 +116,8 @@
     <script src="bkcore/hexgl/tracks/Cityscape.js"></script>
 
     <script src="bkcore/hexgl/HexGL.js"></script>
+  
+  	<script src="mobile-controls.js?v=2"></script>
 
     <script src="launch.js"></script>
 
