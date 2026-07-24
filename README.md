@@ -2,6 +2,7 @@ HexGL
 =========
 
 Source code of [HexGL](http://hexgl.bkcore.com), the futuristic HTML5 racing game by [Thibaut Despoulain](http://bkcore.com)
+New 2026 version available [here]( https://github.com/flowerz88/HexGL-2026/tree/master)
 
 ## Branches
   * **[Master](https://github.com/BKcore/HexGL)** - Public release (stable).
