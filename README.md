@@ -3,7 +3,7 @@ HexGL 2026
 
 This is new 2026 version of the original [HexGL](http://hexgl.bkcore.com), the futuristic HTML5 racing game by [Thibaut Despoulain](http://bkcore.com)
 
-Demo (note: translated in Dutch) is available [here|https://www.komchatten.nl/games/zweefracer].
+Demo (note: translated in Dutch) is available [here]|https://www.komchatten.nl/games/zweefracer].
 
 ## Major changes
 Modernized mobile support and caching for HexGL.
