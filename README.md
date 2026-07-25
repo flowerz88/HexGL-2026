@@ -23,14 +23,4 @@ The goal is to make the original HexGL code more usable on modern mobile browser
 
 ## License
 
-Unless specified in the file, HexGL's code and resources are now licensed under the *MIT License*.
-
-## Installation
-
-	cd ~/
-	git clone git://github.com/BKcore/HexGL.git
-	cd HexGL
-	python -m SimpleHTTPServer
-	chromium index.html
-
-To use full size textures, swap the two textures/ and textures.full/ directories.
+Unless specified in the file, HexGL's code and resources are licensed under the *MIT License*.
